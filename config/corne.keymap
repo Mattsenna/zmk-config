@@ -41,14 +41,14 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// |  DEL |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | CTRL |     |     |PGUP |     |     |   | TAB | LFT |  DN |  UP | RGT |  `   |
-// | SHFT |     |     |PGDN |     |     |   |PRSCN| CAPS| BLNK| BLNK| PRV |  NXT |
+// | SHFT |     |     |PGDN |     |     |   |PRSCN| CAPS| VOLD| VOLU| PRV |  NXT |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8 &kp N9 &kp N0 &kp BSPC
+   &kp  DEL  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8 &kp N9 &kp N0 &kp BSPC
    &kp LCTRL &trans   &trans &kp PG_UP   &trans   &trans      &kp TAB &kp LEFT &kp DOWN        &kp UP &kp RIGHT &kp GRAVE
-   &kp LSHFT &trans   &trans &kp PG_DN   &trans   &trans      &kp PSCRN &kp CAPS &trans &trans        &kp C_PREV &kp C_NEXT
+   &kp LSHFT &trans   &trans &kp PG_DN   &trans   &trans      &kp PSCRN &kp CAPS &kp K_VOL_DN &kp K_VOL_UP        &kp C_PREV &kp C_NEXT
                     	     &kp LGUI &trans   &kp SPACE   &kp SPACE   &trans    &kp RALT
                         >;
                 };
